@@ -1,6 +1,6 @@
 [lab]
-node1 ansible_host=127.0.0.1 ansible_port=2222 ansible_user=ansible ansible_ssh_private_key_file=~/.ssh/ansible ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-node2 ansible_host=127.0.0.1 ansible_port=2223 ansible_user=ansible ansible_ssh_private_key_file=~/.ssh/ansible ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+node1 ansible_host=127.0.0.1 ansible_port=2222 ansible_user=ansible ansible_ssh_private_key_file=~/.ssh/ansible ansible_ssh_common_args='-o StrictHostKeyChecking=no' apache_package=apache2 php_package=libapache2-mod-php
+node2 ansible_host=127.0.0.1 ansible_port=2223 ansible_user=ansible ansible_ssh_private_key_file=~/.ssh/ansible ansible_ssh_common_args='-o StrictHostKeyChecking=no' apache_package=apache2 php_package=libapache2-mod-php
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
